@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="padding">16dp</dimen>
+    <dimen name="tv_width">150dp</dimen>
+    <dimen name="image_width">160dp</dimen>
+    <dimen name="image_height">100dp</dimen>
+    <dimen name="margin_bottom">4dp</dimen>
+</resources>

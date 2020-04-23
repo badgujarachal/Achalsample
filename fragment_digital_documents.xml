@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sv_digital_documents_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/view_document_sanction_letter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:background="@color/White"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/margin_16dp"
+            android:visibility="gone">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/sanction_letter_download"
+                android:layout_width="@dimen/margin_20dp"
+                android:layout_height="@dimen/margin_20dp"
+                android:layout_centerVertical="true"
+                android:background="?selectableItemBackgroundBorderless" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_8dp"
+                android:layout_toRightOf="@id/sanction_letter_download"
+                android:fontFamily="@font/muli"
+                android:text="@string/sanction_letter"
+                android:textColor="@color/colorBlack" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_sanction_letter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_expand_more_black_24dp" />
+
+        </RelativeLayout>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/elDocumentSanctionLetter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            app:el_duration="500"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <com.softcell.soutilities.compound_view.gngx.CardItemView
+                android:id="@+id/civ_document_sanction_letter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginRight="@dimen/margin_16dp"
+                app:cardNavigation="@drawable/ic_eye_grey"
+                app:cardPhoto="@drawable/ic_pdf"
+                app:cardStatusVisibility="invisible"
+                app:cardTitle="@string/sanction_letter"
+                app:cardTitleColor="@color/font_blue" />
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+        <RelativeLayout
+            android:id="@+id/view_document_loan_approval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:background="@color/White"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/margin_16dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/loan_approval_download"
+                android:layout_width="@dimen/margin_20dp"
+                android:layout_height="@dimen/margin_20dp"
+                android:layout_centerVertical="true"
+                android:background="?selectableItemBackgroundBorderless" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_8dp"
+                android:layout_toRightOf="@id/loan_approval_download"
+                android:fontFamily="@font/muli"
+                android:text="@string/loan_approval_letter"
+                android:textColor="@color/colorBlack" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_expand_more_black_24dp" />
+
+        </RelativeLayout>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/elDocumentLoanApproval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            app:el_duration="500"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <com.softcell.soutilities.compound_view.gngx.CardItemView
+                android:id="@+id/civ_document_loan_approval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginRight="@dimen/margin_16dp"
+                app:cardNavigation="@drawable/ic_eye_grey"
+                app:cardPhoto="@drawable/ic_pdf"
+                app:cardStatusVisibility="invisible"
+                app:cardTitle="@string/loan_approval_letter"
+                app:cardTitleColor="@color/font_blue" />
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/view_document_loan_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:background="@color/White"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/margin_16dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/loan_agreement_download"
+                android:layout_width="@dimen/margin_20dp"
+                android:layout_height="@dimen/margin_20dp"
+                android:layout_centerVertical="true"
+                android:background="?selectableItemBackgroundBorderless" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_8dp"
+                android:layout_toRightOf="@id/loan_agreement_download"
+                android:fontFamily="@font/muli"
+                android:text="@string/loan_agreement"
+                android:textColor="@color/colorBlack" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_expand_more_black_24dp" />
+
+        </RelativeLayout>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/elDocumentLoanAgreement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            app:el_duration="500"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <com.softcell.soutilities.compound_view.gngx.CardItemView
+                android:id="@+id/civ_document_loan_agreement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginRight="@dimen/margin_16dp"
+                app:cardNavigation="@drawable/ic_eye_grey"
+                app:cardPhoto="@drawable/ic_pdf"
+                app:cardStatusVisibility="invisible"
+                app:cardTitle="@string/loan_agreement"
+                app:cardTitleColor="@color/font_blue" />
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/view_delivery_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/margin_16dp"
+            android:visibility="gone">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/delivery_order_download"
+                android:layout_width="@dimen/margin_20dp"
+                android:layout_height="@dimen/margin_20dp"
+                android:layout_centerVertical="true"
+                android:background="?selectableItemBackgroundBorderless" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_8dp"
+                android:layout_toRightOf="@id/delivery_order_download"
+                android:fontFamily="@font/muli"
+                android:text="@string/delivery_order"
+                android:textColor="@color/colorBlack" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/delivery_order_card_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_expand_more_black_24dp" />
+
+        </RelativeLayout>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/elDeliveryOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            app:el_duration="@android:integer/config_shortAnimTime"
+            app:el_expanded="false"
+            app:el_parallax="0.5"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_delivery_orders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+        <RelativeLayout
+            android:id="@+id/view_application_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:background="@color/White"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/margin_16dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/application_form_download"
+                android:layout_width="@dimen/margin_20dp"
+                android:layout_height="@dimen/margin_20dp"
+                android:layout_centerVertical="true"
+                android:background="?selectableItemBackgroundBorderless" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/application_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_8dp"
+                android:layout_toRightOf="@id/application_form_download"
+                android:fontFamily="@font/muli"
+                android:text="@string/application_form"
+                android:textColor="@color/colorBlack" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/application_form_card_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_expand_more_black_24dp" />
+
+        </RelativeLayout>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/elApplicationForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            app:el_duration="@android:integer/config_shortAnimTime"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <com.softcell.soutilities.compound_view.gngx.CardItemView
+                android:id="@+id/civ_application_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardNavigation="@drawable/ic_eye_grey"
+                app:cardPhoto="@drawable/ic_pdf"
+                app:cardStatusVisibility="invisible"
+                app:cardTitle="@string/application_form"
+                app:cardTitleColor="@color/font_blue" />
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+        <RelativeLayout
+            android:id="@+id/view_ach_mandate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:background="@color/White"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/margin_16dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/ach_download"
+                android:layout_width="@dimen/margin_20dp"
+                android:layout_height="@dimen/margin_20dp"
+                android:layout_centerVertical="true"
+                android:background="?selectableItemBackgroundBorderless" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/ach_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_8dp"
+                android:layout_toRightOf="@id/ach_download"
+                android:fontFamily="@font/muli"
+                android:text="@string/ach_mandate"
+                android:textColor="@color/colorBlack" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/ach_mandate_card_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_expand_more_black_24dp" />
+        </RelativeLayout>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/elAchMandate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            app:el_duration="@android:integer/config_shortAnimTime"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <com.softcell.soutilities.compound_view.gngx.CardItemView
+                android:id="@+id/civ_ach_mandate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardNavigation="@drawable/ic_eye_grey"
+                app:cardPhoto="@drawable/ic_pdf"
+                app:cardStatusVisibility="invisible"
+                app:cardTitle="@string/ach_mandate"
+                app:cardTitleColor="@color/font_blue" />
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+        <RelativeLayout
+            android:id="@+id/view_document_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:background="@color/White"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/margin_16dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/checklist_download"
+                android:layout_width="@dimen/margin_20dp"
+                android:layout_height="@dimen/margin_20dp"
+                android:layout_centerVertical="true"
+                android:background="?selectableItemBackgroundBorderless" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_8dp"
+                android:layout_toRightOf="@id/checklist_download"
+                android:fontFamily="@font/muli"
+                android:text="@string/document_checklist"
+                android:textColor="@color/colorBlack" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_expand_more_black_24dp" />
+
+        </RelativeLayout>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/elDocumentForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            app:el_duration="500"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <com.softcell.soutilities.compound_view.gngx.CardItemView
+                android:id="@+id/civ_document_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginRight="@dimen/margin_16dp"
+                app:cardNavigation="@drawable/ic_eye_grey"
+                app:cardPhoto="@drawable/ic_pdf"
+                app:cardStatusVisibility="invisible"
+                app:cardTitle="@string/document_checklist"
+                app:cardTitleColor="@color/font_blue" />
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+        <RelativeLayout
+            android:id="@+id/view_document_aadhar_consent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:background="@color/White"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/margin_16dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/consent_download"
+                android:layout_width="@dimen/margin_20dp"
+                android:layout_height="@dimen/margin_20dp"
+                android:layout_centerVertical="true"
+                android:background="?selectableItemBackgroundBorderless" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_8dp"
+                android:layout_toRightOf="@id/consent_download"
+                android:fontFamily="@font/muli"
+                android:text="@string/aadhar_consent"
+                android:textColor="@color/colorBlack" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_expand_more_black_24dp" />
+
+        </RelativeLayout>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/elDocumentAadharConsent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            app:el_duration="500"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <com.softcell.soutilities.compound_view.gngx.CardItemView
+                android:id="@+id/civ_document_aadhar_consent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginRight="@dimen/margin_16dp"
+                app:cardNavigation="@drawable/ic_eye_grey"
+                app:cardPhoto="@drawable/ic_pdf"
+                app:cardStatusVisibility="invisible"
+                app:cardTitle="@string/aadhar_consent"
+                app:cardTitleColor="@color/font_blue" />
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_cancel_approval_letter"
+            style="@style/StyleGngButtonWithLightRedBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_80dp"
+            android:layout_marginRight="@dimen/margin_16dp"
+            android:text="@string/cancel_approval_letter" />
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_next"
+            style="@style/StyleGngButtonWithBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_padding"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:text="@string/next" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
